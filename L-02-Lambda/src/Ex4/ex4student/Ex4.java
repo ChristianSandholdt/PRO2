@@ -23,12 +23,12 @@ public class Ex4 {
 
         //B
 
-//        while (iterator.hasNext()){
-//            if (iterator.next().getLapTime() >= 40){
-//                iterator.remove();
-//            }
-//        }
-//        System.out.println(runners);
+        while (iterator.hasNext()){
+            if (iterator.next().getLapTime() >= 40){
+                iterator.remove();
+            }
+        }
+        System.out.println(runners);
 
         //D
         // System.out.println(removeIf(runners, slowerThanForty));

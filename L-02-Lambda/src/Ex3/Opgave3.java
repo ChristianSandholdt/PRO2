@@ -7,18 +7,10 @@ public class Opgave3 {
 
         //A
         System.out.println("Opgave A");
-        List<Integer> tal = new ArrayList<>();
+        List<Integer> tal = List.of(1,2,3,4,5,6,7,8);
 
-        tal.add(1);
-        tal.add(2);
-        tal.add(3);
-        tal.add(4);
-        tal.add(5);
-        tal.add(6);
-        tal.add(7);
-        tal.add(8);
 
-        ListIterator<Integer> iterator = tal.listIterator();
+        Iterator<Integer> iterator = tal.iterator();
 
         //Kigger efter at så længe iteratoren har en næste værdi at kigge på så printer man den ud.
         while (iterator.hasNext()){

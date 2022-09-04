@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/L-01-Java-Collections-Framework/L-01-Java-Collections-Framework.iml" filepath="$PROJECT_DIR$/L-01-Java-Collections-Framework/L-01-Java-Collections-Framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-02-Lambda/L-02-Lambda.iml" filepath="$PROJECT_DIR$/L-02-Lambda/L-02-Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-03-Git/L-03-Git.iml" filepath="$PROJECT_DIR$/L-03-Git/L-03-Git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-04-JUnit/L-04-JUnit.iml" filepath="$PROJECT_DIR$/L-04-JUnit/L-04-JUnit.iml" />
     </modules>
   </component>
 </project>
