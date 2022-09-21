@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/L-02-Lambda/L-02-Lambda.iml" filepath="$PROJECT_DIR$/L-02-Lambda/L-02-Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-03-Git/L-03-Git.iml" filepath="$PROJECT_DIR$/L-03-Git/L-03-Git.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-04-JUnit/L-04-JUnit.iml" filepath="$PROJECT_DIR$/L-04-JUnit/L-04-JUnit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-07-Time_Complexity/L-07-Time_Complexity.iml" filepath="$PROJECT_DIR$/L-07-Time_Complexity/L-07-Time_Complexity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-08-Recurssion/L-08-Recurssion.iml" filepath="$PROJECT_DIR$/L-08-Recurssion/L-08-Recurssion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-10-Del-Loes-Kombiner/L-10-Del-Loes-Kombiner.iml" filepath="$PROJECT_DIR$/L-10-Del-Loes-Kombiner/L-10-Del-Loes-Kombiner.iml" />
     </modules>
   </component>
 </project>
