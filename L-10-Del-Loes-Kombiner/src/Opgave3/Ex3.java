@@ -26,8 +26,6 @@ public class Ex3 {
         double samletTid = tidEfter - tidFoer;
         System.out.println("Tid: " + samletTid + "ms");
 
-
-
     }
 
     private static void mergesort(ArrayList<Integer> list, int l, int h) {
