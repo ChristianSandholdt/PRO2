@@ -2,16 +2,32 @@ package Opgave3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Ex3 {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>(List.of(8,56,45,34,15,12,34,44));
+        //ArrayList<Integer> list = new ArrayList<>(List.of(8,56,45,34,15,12,34,44));
+        //mergesort(list, 0, list.size()-1);
+        //System.out.println(list);
+
+        Random r = new Random();
+        int[] ints = r.ints(1000000,1,100000).toArray();
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        for (int e : ints){
+            numbers.add(e);
+        }
+
+        long tidFoer = System.currentTimeMillis();
+        mergesort(numbers,0, numbers.size()-1);
+        long tidEfter = System.currentTimeMillis();
+        System.out.println(numbers);
+        double samletTid = tidEfter - tidFoer;
+        System.out.println("Tid: " + samletTid + "ms");
 
 
 
-        mergesort(list, 0, list.size()-1);
-        System.out.println(list);
     }
 
     private static void mergesort(ArrayList<Integer> list, int l, int h) {
