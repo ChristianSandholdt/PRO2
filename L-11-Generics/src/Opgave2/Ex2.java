@@ -54,11 +54,6 @@ public class Ex2 {
                 temp.add(e);
             }
         }
-        for (E e : set2) {
-            if (set1.contains(e)){
-                temp.add(e);
-            }
-        }
         return temp;
     }
 
@@ -68,10 +63,9 @@ public class Ex2 {
         temp.addAll(set2);
 
         for (E e : set1){
-            for (E t : set2) {
                 if (set2.contains(e)){
                     temp.remove(e);
-                }
+
             }
         }
         return temp;

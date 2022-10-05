@@ -9,10 +9,10 @@ public class Test {
 
 
     public static void main(String[] args) {
-        Person<String> p1 = new Person<>("Jordan",21);
-        Person<String> p2 = new Person<>("Jordon",22);
-        Person<String> p3 = new Person<>("Roberto",23);
-        Person<String> p4 = new Person<>("Mohamed",24);
+        Person<String> p1 = new Person<>("Jordan",27);
+        Person<String> p2 = new Person<>("Jordon",24);
+        Person<String> p3 = new Person<>("Roberto",26);
+        Person<String> p4 = new Person<>("Mohamed",21);
         Person<FullName> p5 = new Person<>(new FullName("Andrew","Robertson"),25);
         Person<FullName> p6 = new Person<>(new FullName("Trent","Alexander"),26);
         Person<FullName> p7 = new Person<>(new FullName("Harvey","Elliot"),27);
@@ -43,7 +43,10 @@ public class Test {
 
 
         System.out.println(persons);
-        persons.sort(Person::compareTo);
+        //Metode som sammenligner på navne
+//        persons.sort(Person::compareTo);
+        //Lambdafunktion som sammenligner på alder
+        persons.sort((person1,person2) -> Integer.compare(person1.getAge(), person2.getAge()));
         System.out.println(persons);
 
     }
