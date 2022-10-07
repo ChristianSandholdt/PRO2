@@ -21,10 +21,10 @@ public class Elipse extends ShapesComponent {
         return name;
     }
 
+    @Override
     public String draw() {
-        return toString();
+        return super.draw();
     }
-
 
     public double calcCirc(){
         return 2 * Math.PI * Math.sqrt((a*a+b*b)/2);

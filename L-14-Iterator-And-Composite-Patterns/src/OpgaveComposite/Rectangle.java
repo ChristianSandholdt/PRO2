@@ -21,8 +21,9 @@ public class Rectangle extends ShapesComponent{
     }
 
 
-    public String draw(){
-        return toString();
+    @Override
+    public String draw() {
+        return super.draw();
     }
 
     public double calcCirc(){

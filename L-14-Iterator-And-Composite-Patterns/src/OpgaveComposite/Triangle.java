@@ -23,8 +23,9 @@ public class Triangle extends ShapesComponent{
     }
 
 
-    public String draw(){
-        return toString();
+    @Override
+    public String draw() {
+        return super.draw();
     }
 
     public double calcCirc() {
