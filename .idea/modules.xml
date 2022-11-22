@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/L-11-Generics/L-11-Generics.iml" filepath="$PROJECT_DIR$/L-11-Generics/L-11-Generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-14-Iterator-And-Composite-Patterns/L-14-Iterator-And-Composite-Patterns.iml" filepath="$PROJECT_DIR$/L-14-Iterator-And-Composite-Patterns/L-14-Iterator-And-Composite-Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-15-Architecture_Serializable/L-15-Architecture_Serializable.iml" filepath="$PROJECT_DIR$/L-15-Architecture_Serializable/L-15-Architecture_Serializable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-22-LinkedList/L-22-LinkedList.iml" filepath="$PROJECT_DIR$/L-22-LinkedList/L-22-LinkedList.iml" />
     </modules>
   </component>
 </project>
