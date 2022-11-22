@@ -51,7 +51,7 @@ public class SortedLL {
             first = null;
             found = true;
         }
-        while (node.next.next != null){
+        while (node.next != null){
             node = node.next;
             if (node.next.next == null){
                 node.next = null;
@@ -72,7 +72,7 @@ public class SortedLL {
             first = first.next;
         }
 
-        while (node.next != null && !node.next.equals(s)){
+        while (node.next != null && !node.next.data.equals(s)){
             node = node.next;
         }
         if (node.next != null){

@@ -4,9 +4,9 @@ public class Elipse extends ShapesComponent {
 
     private String name;
 
-    private double a; // Mindste radius
+    private final double a; // Mindste radius
 
-    private double b; // Største radius
+    private final double b; // Største radius
     public Elipse(String name, double a, double b) {
         this.name = name;
         this.a = a;

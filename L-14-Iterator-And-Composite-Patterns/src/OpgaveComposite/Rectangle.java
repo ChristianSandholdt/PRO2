@@ -3,8 +3,8 @@ package OpgaveComposite;
 public class Rectangle extends ShapesComponent{
 
     private String name;
-    private double a;
-    private double b;
+    private final double a;
+    private final double b;
     public Rectangle(String name, double a, double b){
         this.name = name;
         this.a = a;
