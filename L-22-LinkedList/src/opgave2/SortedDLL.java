@@ -28,7 +28,7 @@ public class SortedDLL {
         }
         Node node = header.next;
 
-        //Insert element before node bigger than newNode
+        //Insert element before node > newNode
         if (node.data.compareTo(s) > 0){
 
             node.previous.next = newNode;
@@ -59,16 +59,22 @@ public class SortedDLL {
         while (node != trailer && node.data.compareTo(s) <= 0){
             node = node.next;
         }
-        newNode.next = node.next;
-        node.next = newNode;
 
+        newNode.previous = node.previous;
+        newNode.next = node;
+        node.previous.next = newNode;
+        node.previous = newNode;
     }
 
     public boolean removeLast(){
-        if (trailer.previous != header){
-            trailer.previous = trailer.previous.previous;
-            trailer.previous.next = trailer;
-            return true;
+        Node remove = header.next;
+        while (remove != trailer){
+            if (remove.next == trailer){
+                remove.next.previous = remove.previous;
+                remove.previous.next = trailer;
+                return true;
+            }
+            remove = remove.next;
         }
         return false;
     }

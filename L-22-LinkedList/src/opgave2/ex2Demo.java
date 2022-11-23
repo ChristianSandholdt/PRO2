@@ -5,20 +5,28 @@ public class ex2Demo {
         SortedDLL list = new SortedDLL();
 
 
-//        list.add("Papegøje");
-//        list.add("Aabe");
-//        list.add("Struds");
+        list.add("Papegøje");
+        list.add("Struds");
+        list.add("Frø");
         list.add("Elefant");
         list.add("Abe");
         list.add("Citron");
+        list.add("Tiger");
         list.printElements();
         //Remove
 
         System.out.println();
-//        System.out.println(list.remove("Struds"));
-
-        System.out.println();
+        System.out.println("Remove struds");
+        list.remove("Struds");
         list.printElements();
+        System.out.println();
 
+        System.out.println("Remove last element");
+        System.out.println(list.removeLast());
+        list.printElements();
+        System.out.println();
+
+        System.out.println("Count elements");
+        System.out.println(list.count());
     }
 }
