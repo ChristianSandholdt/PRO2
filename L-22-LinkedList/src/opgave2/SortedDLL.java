@@ -20,35 +20,43 @@ public class SortedDLL {
         Node newNode = new Node(s);
         //If list empty
         if (header.next == trailer){
-            newNode.next = trailer;
-            newNode.previous = header;
             header.next = newNode;
+            newNode.next = trailer;
             trailer.previous = newNode;
+            newNode.previous = header;
             return;
         }
         Node node = header.next;
 
-        //If list size 1 and element smaller than current element
+        //Insert element before node bigger than newNode
         if (node.data.compareTo(s) > 0){
+
+            node.previous.next = newNode;
+            newNode.previous = node.previous;
             newNode.next = node;
             node.previous = newNode;
-            newNode.previous = header;
-            header.next = newNode;
+            System.out.println("test");
             return;
         }
+
+
 
         //If element bigger than all other elements
         if (node.next == trailer){
             if (node.data.compareTo(s) < 0){
+                newNode.next = trailer;
+                trailer.previous = newNode;
+                newNode.previous = node;
                 node.next = newNode;
             } else if (node.data.compareTo(s) >= 0){
                 newNode.next = node;
+                newNode.previous = node.previous;
                 node.previous = newNode;
             }
             return;
         }
 
-        while (node.next != null && node.next.data.compareTo(s) <= 0){
+        while (node != trailer && node.data.compareTo(s) <= 0){
             node = node.next;
         }
         newNode.next = node.next;
@@ -90,7 +98,7 @@ public class SortedDLL {
             throw new NoSuchElementException();
         }
         Node node = header.next;
-        while (node != null){
+        while (node != trailer){
             System.out.println(node.data);
             node = node.next;
         }
