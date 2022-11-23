@@ -5,9 +5,17 @@ public class ex2Demo {
         SortedDLL list = new SortedDLL();
 
 
+        list.add("Aabe");
+        list.add("Papegøje");
+        list.add("Struds");
         list.add("Abe");
         list.add("Elefant");
+        list.printElements();
+        //Remove
+        System.out.println(list.remove("Struds"));
 
+        System.out.println();
+        list.printElements();
 
     }
 }

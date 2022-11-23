@@ -2,11 +2,12 @@ package opgave2;
 
 import opgave1.SortedLL;
 
+import java.util.NoSuchElementException;
+
 public class SortedDLL {
 
     private Node header;
     private Node trailer;
-    private Node first;
 
     public SortedDLL(){
         header = new Node(null);
@@ -19,7 +20,7 @@ public class SortedDLL {
         Node newNode = new Node(s);
         //If list empty
         if (header.next == trailer){
-            newNode.next = header.next;
+            newNode.next = trailer;
             newNode.previous = header;
             header.next = newNode;
             trailer.previous = newNode;
@@ -30,6 +31,8 @@ public class SortedDLL {
         //If list size 1 and element smaller than current element
         if (node.data.compareTo(s) > 0){
             newNode.next = node;
+            node.previous = newNode;
+            newNode.previous = header;
             header.next = newNode;
             return;
         }
@@ -53,7 +56,59 @@ public class SortedDLL {
 
     }
 
+    public boolean removeLast(){
+        if (trailer.previous != header){
+            trailer.previous = trailer.previous.previous;
+            trailer.previous.next = trailer;
+            return true;
+        }
+        return false;
+    }
 
+    public boolean remove(String s){
+        if (header.next == trailer){
+            return false;
+        }
+        Node node = header.next;
+
+        while (node != trailer && !node.data.equals(s)){
+            node = node.next;
+            }
+
+        if (node != trailer){
+            node.next.previous = node.previous;
+            node.previous.next = node.next;
+            return true;
+        }
+
+        return false;
+    }
+
+
+    public void printElements(){
+        if (header.next == trailer){
+            throw new NoSuchElementException();
+        }
+        Node node = header.next;
+        while (node != null){
+            System.out.println(node.data);
+            node = node.next;
+        }
+    }
+
+    public int count(){
+        int count = 0;
+        if (header == trailer){
+            throw new NoSuchElementException();
+        }
+
+        Node node = header.next;
+        while (node != trailer){
+            count++;
+            node = node.next;
+        }
+        return count;
+    }
 
 
     private class Node {

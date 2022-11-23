@@ -78,6 +78,7 @@ public class SortedLL {
         if (node.next != null){
             node.next = node.next.next;
         }
+
         return false;
     }
 
