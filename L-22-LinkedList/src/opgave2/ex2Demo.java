@@ -9,6 +9,8 @@ public class ex2Demo {
         list.add("Struds");
         list.add("Frø");
         list.add("Elefant");
+        list.add("Søko");
+        list.add("Solsort");
         list.add("Abe");
         list.add("Citron");
         list.add("Tiger");
