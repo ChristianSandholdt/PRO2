@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/L-14-Iterator-And-Composite-Patterns/L-14-Iterator-And-Composite-Patterns.iml" filepath="$PROJECT_DIR$/L-14-Iterator-And-Composite-Patterns/L-14-Iterator-And-Composite-Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-15-Architecture_Serializable/L-15-Architecture_Serializable.iml" filepath="$PROJECT_DIR$/L-15-Architecture_Serializable/L-15-Architecture_Serializable.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-22-LinkedList/L-22-LinkedList.iml" filepath="$PROJECT_DIR$/L-22-LinkedList/L-22-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-23-Stacks/L-23-Stacks.iml" filepath="$PROJECT_DIR$/L-23-Stacks/L-23-Stacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-24-Queues/L-24-Queues.iml" filepath="$PROJECT_DIR$/L-24-Queues/L-24-Queues.iml" />
     </modules>
   </component>
 </project>

@@ -18,43 +18,8 @@ public class SortedDLL {
 
     public void add(String s){
         Node newNode = new Node(s);
-        //If list empty
-        if (header.next == trailer){
-            header.next = newNode;
-            newNode.next = trailer;
-            trailer.previous = newNode;
-            newNode.previous = header;
-            return;
-        }
+
         Node node = header.next;
-
-        //Insert element before node > newNode
-        if (node.data.compareTo(s) > 0){
-
-            node.previous.next = newNode;
-            newNode.previous = node.previous;
-            newNode.next = node;
-            node.previous = newNode;
-            System.out.println("test");
-            return;
-        }
-
-
-
-        //If element bigger than all other elements
-        if (node.next == trailer){
-            if (node.data.compareTo(s) < 0){
-                newNode.next = trailer;
-                trailer.previous = newNode;
-                newNode.previous = node;
-                node.next = newNode;
-            } else if (node.data.compareTo(s) >= 0){
-                newNode.next = node;
-                newNode.previous = node.previous;
-                node.previous = newNode;
-            }
-            return;
-        }
 
         while (node != trailer && node.data.compareTo(s) <= 0){
             node = node.next;
@@ -80,9 +45,6 @@ public class SortedDLL {
     }
 
     public boolean remove(String s){
-        if (header.next == trailer){
-            return false;
-        }
         Node node = header.next;
 
         while (node != trailer && !node.data.equals(s)){
@@ -100,9 +62,6 @@ public class SortedDLL {
 
 
     public void printElements(){
-        if (header.next == trailer){
-            throw new NoSuchElementException();
-        }
         Node node = header.next;
         while (node != trailer){
             System.out.println(node.data);
@@ -112,9 +71,6 @@ public class SortedDLL {
 
     public int count(){
         int count = 0;
-        if (header == trailer){
-            throw new NoSuchElementException();
-        }
 
         Node node = header.next;
         while (node != trailer){
