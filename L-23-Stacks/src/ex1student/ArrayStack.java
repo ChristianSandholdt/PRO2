@@ -103,4 +103,19 @@ public class ArrayStack<E> implements StackI<E> {
             return count;
     }
 
+    @Override
+    public boolean pController(E entry) {
+        return false;
+    }
+
+    @Override
+    public boolean palindromeController(E entry) {
+        return false;
+    }
+
+    @Override
+    public int evaluate(String input) {
+        return 0;
+    }
+
 }

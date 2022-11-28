@@ -102,6 +102,7 @@ public class SingleLinkedQueue<E> implements QueueI<E> {
 			return "List empty";
 		}
 		return "SingleLinkedQueue{" +
+
 				"first=" + first.entry +
 				", last=" + last.entry +
 				" Size = " + size() +
