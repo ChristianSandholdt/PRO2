@@ -18,6 +18,9 @@
       <module fileurl="file://$PROJECT_DIR$/L-23-Stacks/L-23-Stacks.iml" filepath="$PROJECT_DIR$/L-23-Stacks/L-23-Stacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-24-Queues/L-24-Queues.iml" filepath="$PROJECT_DIR$/L-24-Queues/L-24-Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/L-25-Hashing/L-25-Hashing.iml" filepath="$PROJECT_DIR$/L-25-Hashing/L-25-Hashing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-26-Maps/L-26-Maps.iml" filepath="$PROJECT_DIR$/L-26-Maps/L-26-Maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-27-Binary-Tree/L-27-Binary-Tree.iml" filepath="$PROJECT_DIR$/L-27-Binary-Tree/L-27-Binary-Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L-28-Binary-Tree-Seaches/L-28-Binary-Tree-Seaches.iml" filepath="$PROJECT_DIR$/L-28-Binary-Tree-Seaches/L-28-Binary-Tree-Seaches.iml" />
     </modules>
   </component>
 </project>

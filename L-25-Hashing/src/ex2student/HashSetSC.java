@@ -107,14 +107,15 @@ public class HashSetSC<E> {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < table.length; i++){
-            Node<E> node = table[i];
+        StringBuilder sb = new StringBuilder("[");
+        for (Node<E> node : table){
             while (node != null){
-                sb.append("Element in array and subnodes: " + node.data).append("\n");
+                sb.append(", ").append(node.data);
                 node = node.next;
             }
         }
+        sb.delete(1,3);
+        sb.append("]");
         return sb.toString();
     }
 
